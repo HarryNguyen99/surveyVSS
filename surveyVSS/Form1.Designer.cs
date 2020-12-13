@@ -56,7 +56,6 @@ namespace surveyVSS
             this.label1.Size = new System.Drawing.Size(375, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "How was your day???";
-          
             // 
             // pictureBox5
             // 
@@ -159,7 +158,7 @@ namespace surveyVSS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1812, 830);
+            this.ClientSize = new System.Drawing.Size(1604, 830);
             this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -175,8 +174,7 @@ namespace surveyVSS
             this.Name = "survey";
             this.Text = "Survey";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
-
+            this.Load += new System.EventHandler(this.survey_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

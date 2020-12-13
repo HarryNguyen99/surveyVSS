@@ -1,9 +1,12 @@
 ﻿using Microsoft.Win32;
+using surveyVSS.model;
+using surveyVSS.service;
 using System;
 using System.Diagnostics;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace surveyVSS
 {
@@ -135,10 +138,38 @@ namespace surveyVSS
             this.Close();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private  async void pictureBox4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ok4");
+            //tesst
+            var testModel = new TestModel()
+            {
+                Body = "test",
+                Id = 99999,
+                UserId = 1,
+                Title = "Test"
+            };
+            //await new HttpHelpers().PostAsync("https://jsonplaceholder.typicode.com/posts", testModel);
+            //await HttpHelpers.RunAsync("https://jsonplaceholder.typicode.com/posts/1/comments");
             this.Close();
+        }
+
+        private async void survey_Load(object sender, EventArgs e)
+        {
+            //this.Hide();
+
+            while (false)
+            {
+                if (DateTime.Now.ToString("hh:mm").Equals("17:00"))
+                {
+                    this.Show();
+                    break;
+                }
+                await Task.Delay(100);
+            }
+
+
+
         }
     }
 }
