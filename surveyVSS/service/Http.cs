@@ -31,8 +31,8 @@ namespace surveyVSS.service
             using (var client = new HttpClient())
             {
                 
-                client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com");
-                var response = client.PostAsJsonAsync("posts", t).Result;
+                client.BaseAddress = new Uri("http://localhost:8080/api/moodSuvervey/");
+                var response = client.PostAsJsonAsync("add", t).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     Console.Write("Success");
