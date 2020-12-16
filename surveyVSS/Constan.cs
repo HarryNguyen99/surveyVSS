@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace surveyVSS.model
+namespace surveyVSS
 {
-    class SurveyModel
+    static class Constan
     {
-        public string type { get; set; }
-        public string hostName { get; set; }
+        public const string URL = "http://localhost:8080/api/moodSuvervey/";
     }
 }

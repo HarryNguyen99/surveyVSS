@@ -55,6 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constan.cs" />
+    <Compile Include="Hostname.cs" />
     <Compile Include="service\CustomHttpClient.cs" />
     <Compile Include="FormSurvey.cs">
       <SubType>Form</SubType>
@@ -67,6 +69,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\Http.cs" />
+    <Compile Include="Timer.cs" />
     <EmbeddedResource Include="FormSurvey.resx">
       <DependentUpon>FormSurvey.cs</DependentUpon>
     </EmbeddedResource>
